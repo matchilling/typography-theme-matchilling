@@ -1,0 +1,35 @@
+{
+  "name": "typography-theme-matchilling",
+  "author": {
+    "name": "Mathias Schilling",
+    "email": "m@matchilling.com",
+    "url": "https://www.matchilling.com"
+  },
+  "homepage": "https://matchilling.com",
+  "version": "0.8.0",
+  "license": "GPL-3.0",
+  "description": "A theme for Typography.js inspired by the typography of the Wordpress 2016 default theme",
+  "keywords": [
+    "css",
+    "typography",
+    "typography-theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matchilling/typography-theme-matchilling.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matchilling/typography-theme-matchilling/issues"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "../../node_modules/.bin/babel src --out-dir dist/",
+    "flow": "../../node_modules/.bin/flow",
+    "lint": "../../node_modules/.bin/eslint --ext .js,.jsx --ignore-path .gitignore .",
+    "watch": "../../node_modules/.bin/babel -w src --out-dir dist/"
+  },
+  "dependencies": {
+    "gray-percentage": "^2.0.0",
+    "typography-breakpoint-constants": "^0.15.10"
+  }
+}
